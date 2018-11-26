@@ -11,6 +11,9 @@
 */
 
 
+$color-main-text: #fed348;
+$color-main: #a1061f;
+
 // - - - - - - - - - -
 // * Buttons
 // - - - - - - - - - -
@@ -35,4 +38,9 @@ button, .btn {
 			fill: white;
 		}
 	}
+}
+
+.action-btn {
+	background: $color-main;
+	color: $color-main-text;
 }

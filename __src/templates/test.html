@@ -1,3 +1,68 @@
+<style>
+.column {
+	width: 100%;
+	margin: 20px 0 20px 0;
+}
+
+.duo-column {
+	width: 49%;
+	display: inline-block;
+	padding: 20px;
+}
+
+.triple-column {
+	width: 32%;
+	display: inline-block;
+	padding: 20px;
+}
+
+/*card section */
+
+.grid {
+	width: 90%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: stretch;
+    margin: 0 auto;
+}
+.card {
+	flex: 0 0 380px;
+	margin: 10px;
+	border: 1px solid #CECECE;
+}
+.card-img {
+    max-width: 100%;
+  }
+.card .info {
+	padding: 10px 20px 20px 20px;
+}
+
+.reverse {
+  	display: flex;
+  	flex-direction: column;
+}
+.reverse .card-img {
+  	order: 2;  
+}
+.reverse .card-info {
+    order: 1;
+}
+
+.minimal {
+	display: none !important;
+    visibility: hidden !important;
+}
+
+
+@media screen and (max-width: 50em) {
+    .duo-column, 
+    .triple-column, 
+    .card-column,
+    .grid {width: 100%;}
+}
+
+</style>
+
 <!-- Heading Component -->
 <div class="c-heading t-red">
     <div class="c-heading__block">
@@ -8,6 +73,217 @@
 </div>
 
 <!-- Add Tabs Component Here -->
+<!-- Tabs Component -->
+<div class="c-tabView">
+    <nav class="c-tabView__tabs t-black">
+        <ul role="tablist">
+            <li>Layout Structure</li>
+            <li>Card Components</li>
+        </ul>
+    </nav>
+    <div class="c-tabView__content">
+        <div class="c-tabView__content__block u-inner page">
+        	<div id="column1" class="column">
+        		<!--single-->
+				<h3>Single Column</h3>
+				<img src="/images/img/image1.png" style="width: 100%; margin-top:1em; margin-bottom:1em;">
+				<p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?</p>
+
+				<ul>
+	            	<li>Lorem ipsum dolor sit amet.</li>
+	            	<li>Aliquam tincidunt mauris eu risus.</li>
+	            	<li>Vestbulum auctor dapibus neque.</li>
+	        	</ul>	
+
+	        	<a href="#">Sed ut perspiciatis unde omnis iste natus error sit voluptate.</a>
+	        </div>
+
+	        <!--duo-->
+	        <div id=column2 class="column duo-column">
+				<h3>Duo Column</h3>
+				<img src="/images/img/image1.png" style="width: 100%; margin-top:1em; margin-bottom:1em;">
+				<p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?</p>
+
+				<ul>
+	            	<li>Lorem ipsum dolor sit amet.</li>
+	            	<li>Aliquam tincidunt mauris eu risus.</li>
+	            	<li>Vestbulum auctor dapibus neque.</li>
+	        	</ul>	
+
+	        	<a href="#">Sed ut perspiciatis unde omnis iste natus error sit voluptate.</a>
+	        </div>
+	        <div id="column3" class="column duo-column">
+				<h3>Duo Column</h3>
+				<img src="/images/img/image1.png" style="width: 100%; margin-top:1em; margin-bottom:1em;">
+				<p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?</p>
+
+				<ul>
+	            	<li>Lorem ipsum dolor sit amet.</li>
+	            	<li>Aliquam tincidunt mauris eu risus.</li>
+	            	<li>Vestbulum auctor dapibus neque.</li>
+	        	</ul>	
+
+	        	<a href="#">Sed ut perspiciatis unde omnis iste natus error sit voluptate.</a>
+	        </div>
+
+	        <!--triple-->
+	        <div id="column4" class="column triple-column">
+				<h3>Tri Column</h3>
+				<img src="/images/img/image1.png" style="width: 100%; margin-top:1em; margin-bottom:1em;">
+				<p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?</p>
+
+				<ul>
+	            	<li>Lorem ipsum dolor sit amet.</li>
+	            	<li>Aliquam tincidunt mauris eu risus.</li>
+	            	<li>Vestbulum auctor dapibus neque.</li>
+	        	</ul>	
+
+	        	<a href="#">Sed ut perspiciatis unde omnis iste natus error sit voluptate.</a>
+	        </div>
+	        <div id=column5 class="column triple-column">
+				<h3>Tri Column</h3>
+				<img src="/images/img/image1.png" style="width: 100%; margin-top:1em; margin-bottom:1em;">
+				<p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?</p>
+
+				<ul>
+	            	<li>Lorem ipsum dolor sit amet.</li>
+	            	<li>Aliquam tincidunt mauris eu risus.</li>
+	            	<li>Vestbulum auctor dapibus neque.</li>
+	        	</ul>	
+
+	        	<a href="#">Sed ut perspiciatis unde omnis iste natus error sit voluptate.</a>
+	        </div>
+	        <div id="column6" class="column triple-column">
+				<h3>Tri Column</h3>
+				<img src="/images/img/image1.png" style="width: 100%; margin-top:1em; margin-bottom:1em;">
+				<p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?</p>
+
+				<ul>
+	            	<li>Lorem ipsum dolor sit amet.</li>
+	            	<li>Aliquam tincidunt mauris eu risus.</li>
+	            	<li>Vestbulum auctor dapibus neque.</li>
+	        	</ul>	
+
+	        	<a href="#">Sed ut perspiciatis unde omnis iste natus error sit voluptate.</a>
+	        </div>
+        </div>
+        <div class="c-tabView__content__block u-inner">
+
+			<div class="grid">
+				<div class="card">
+			  		<img src="/images/img/image1.png" class="card-img" style="height: 200px;">
+			  		<div class="info">
+						<h3>
+							<svg>
+								<use xlink:href="/images/svg/icons-map.svg#location" 
+								style="fill: #a1061f;"></use>
+							</svg>
+							Card Title
+						</h3>
+						<h6>by Author's Name</h6>
+						<p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit.</p>
+
+						<button type="button" class="action-btn">Action</button>
+						<button type="button">
+							Outward 
+							<svg>
+								<use xlink:href="/images/svg/icons-map.svg#target-window"></use>
+							</svg>
+						</button>
+					</div>
+	        	</div>
+			  	<div class="card reverse">
+			  		<img src="/images/img/image1.png" class="card-img" style="height: 200px;">
+			  		<div class="info">
+						<h3>
+							<svg>
+								<use xlink:href="/images/svg/icons-map.svg#location" 
+								style="fill: #a1061f;"></use>
+							</svg>
+							Card Title</h3>
+						<h6>by Author's Name</h6>
+						<p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit.</p>
+
+						<button type="button" class="action-btn">Action</button>
+						<button type="button">
+							Outward
+							<svg>
+								<use xlink:href="/images/svg/icons-map.svg#target-window"></use>
+							</svg>
+						</button>
+					</div>
+	        	</div>
+			  	<div class="card">
+			  		<img src="/images/img/image1.png" class="card-img minimal" style="height: 200px;">
+			  		<div class="info">
+						<h3>
+							<svg>
+								<use xlink:href="/images/svg/icons-map.svg#location" 
+								style="fill: #a1061f;"></use>
+							</svg>
+							Card Title
+						</h3>
+						<h6>by Author's Name</h6>
+						<p class="minimal">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit.</p>
+
+						<button type="button" class="action-btn minimal">Action</button>
+						<button type="button" class="minimal">
+							Outward
+							<svg>
+								<use xlink:href="/images/svg/icons-map.svg#target-window"></use>
+							</svg>
+						</button>
+					</div>
+			  	</div>
+			</div>
+
+        	<!--
+
+	        <div class="card-column" style="border: 1px solid #CECECE;">
+				<img src="/images/img/image1.png" class="card-img" style="width: 100%; height: 200px;">
+
+				<div class="card-info">
+					<h3><object type="image/svg+xml" width="20" height="20" data="/images/svg/icons-map.svg#location"></object> Card Title</h3>
+					<h6>by Author's Name</h6>
+					<p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit.</p>
+
+					<button type="button" class="action-btn">Action</button>
+					<button type="button">Outward</button>
+				</div>
+	        </div>
+
+	        <div class="card-column switch" style="border: 1px solid #CECECE;">
+				<img src="/images/img/image1.png" class="card-img" style="width: 100%; height: 200px;">
+
+				<div class="card-info">
+					<h3><object type="image/svg+xml" width="20" height="20" data="/images/svg/icons-map.svg#location"></object> Card Title</h3>
+					<h6>by Author's Name</h6>
+					<p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit.</p>
+
+					<button type="button" class="action-btn">Action</button>
+					<button type="button">Outward</button>
+				</div>
+	        </div>
+
+	        <div class="card-column" style="border: 1px solid #CECECE;">
+				<img src="/images/img/image1.png" class="card-img minimal" style="width: 100%; height: 200px;">
+
+				<div class="card-info">
+					<h3><object type="image/svg+xml" width="20" height="20" data="/images/svg/icons-map.svg#location"></object> Card Title</h3>
+					<h6>by Author's Name</h6>
+					<p class="minimal">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit.</p>
+
+					<button type="button" class="action-btn minimal">Action</button>
+					<button type="button" class="minimal">Outward</button>
+				</div>
+	        </div>
+	    -->
+	       
+        </div>
+    </div>
+</div>
+
+<script src="js/base/tabs.component.js"></script>
 
 <!--
     IF YOU NEED TO USE JAVASCRIPT, LINK THEM HERE
